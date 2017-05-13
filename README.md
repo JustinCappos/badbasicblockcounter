@@ -4,6 +4,11 @@ This is a basic program that is meant to get basic block information from
 C code.  Specifically, it is intended to run on very large codebases (such as
 the Linux kernel).  
 
+Very understandably, most tools work at the binary level, since this is where
+it is more sensible to talk about the concept of a basic block.  I'm looking
+to use the info to find and correct errors in gcov's labeling of lines of
+C code as unlabeled, so need to work at the C level.
+
 This code has been done very poorly / quickly and is not meant to be used or
 relied on for any purpose.  User beware!!!
 
